@@ -1,4 +1,4 @@
-package com.chenwg.bussearch;
+package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import cn.open189.api.http.Callback;
+
+import com.chenwg.bussearch.R;
 import com.chenwg.bussearch.service.SearchService;
 import org.json.JSONArray;
 import org.json.JSONException;

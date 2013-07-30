@@ -1,4 +1,6 @@
-package com.chenwg.bussearch;
+package com.chenwg.bussearch.activity;
+
+import com.chenwg.bussearch.R;
 
 import android.app.TabActivity;
 import android.content.Intent;

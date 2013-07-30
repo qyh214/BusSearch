@@ -1,4 +1,4 @@
-package com.chenwg.bussearch;
+package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 import cn.open189.api.EmpAPI;
 import cn.open189.api.http.Callback;
 import org.json.JSONObject;
+
+import com.chenwg.bussearch.R;
 
 /**
  * Created by della on 13-7-29.

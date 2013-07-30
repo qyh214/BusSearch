@@ -1,4 +1,4 @@
-package com.chenwg.bussearch;
+package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.SimpleAdapter;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.chenwg.bussearch.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

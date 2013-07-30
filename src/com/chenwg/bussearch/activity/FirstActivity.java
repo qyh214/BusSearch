@@ -1,4 +1,4 @@
-package com.chenwg.bussearch;
+package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import cn.open189.api.EmpAPI;
 import cn.open189.api.http.Callback;
 import cn.open189.api.util.DateHelper;
+
+import com.chenwg.bussearch.R;
 import com.chenwg.bussearch.service.SearchService;
 
 import java.net.URLDecoder;
