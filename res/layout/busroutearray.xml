@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical" android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:background="#FCF9FA"
         >
-    <TextView
-            android:id="@+id/tx"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:enabled="false"
-            />
 
     <LinearLayout android:orientation="vertical"
                   android:layout_width="fill_parent"
@@ -27,7 +21,59 @@
         </ListView>
     </LinearLayout>
 
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ProgressBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center"
+
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在查询"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
 
 
 
-</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

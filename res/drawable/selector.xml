@@ -11,7 +11,7 @@
 	<item android:state_pressed="true">
 		<shape>
 			<gradient android:angle="270" android:endColor="#4559F3"
-				android:startColor="#1C20C0" />
+				android:startColor="#40A0ff" />
 			<size android:height="60dp" android:width="320dp" />
 		</shape>
 	</item>
