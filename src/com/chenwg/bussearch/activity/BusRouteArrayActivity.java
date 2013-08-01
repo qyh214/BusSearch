@@ -76,6 +76,7 @@ public class BusRouteArrayActivity extends Activity {
         // e.printStackTrace();
         // }
 
+        tx = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         tx2 = (TextView)findViewById(R.id.textView2);
 
@@ -133,6 +134,7 @@ public class BusRouteArrayActivity extends Activity {
                                     }
                                     progressBar.setVisibility(View.INVISIBLE);
                                     tx2.setVisibility(View.INVISIBLE);
+
                                     BinderListData(arrayList);
                                     int i = jsonArray.length();
                                     System.out.println("i====" + i);
@@ -222,135 +224,12 @@ public class BusRouteArrayActivity extends Activity {
 
     // 绑定数据
     public void BinderListData(ArrayList arrayListRoute) {
+
         // 创建adapter对象
         adapter = new ListViewAdapter(R.layout.list_item, this, arrayListRoute);
         // 将Adapter绑定到listview中
         list.setAdapter(adapter);
     }
 
-    private ArrayList<HashMap<String, Object>> getData() {
 
-        Bundle bundle = this.getIntent().getExtras();
-        String station = bundle.getString("station");
-        final ArrayList<HashMap<String, Object>> dlist = new ArrayList<HashMap<String, Object>>();
-
-        String city = "020";
-        SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = new Date();
-
-        try {
-            Bundle params = new Bundle();
-            params.putString("app_id", "405410020000031174");
-            params.putString("access_token", "fa63d346ab78af2225cf7597de0973551375092994988");
-            params.putString("city", city);
-            params.putString("busName", URLDecoder.decode(station, "utf-8"));
-            params.putString("encode", "utf-8");
-            // params.putString("batch", "2");
-            // params.putString("number", "5");
-            params.putString("timestamp", formater.format(date));
-            // System.out.println("params===" + params.toString());
-            SearchService.getBusRouteInfo(SearchService.busRouteInfoUrl, params, new Callback() {
-                @Override
-                public void onSuccess(final Object o) {
-
-                    BusRouteArrayActivity.this.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            // Log.i(TAG, o.toString());
-                            try {
-                                JSONObject jsonObject = new JSONObject(o.toString());
-                                String res_code = jsonObject.getString("res_code");
-                                if ("0".equals(res_code)) {
-                                    JSONArray jsonArray = jsonObject.getJSONObject("response").getJSONArray("list");
-                                    //
-                                    // Intent intent = new Intent(SecondActivity.this, BusRouteArrayActivity.class);
-                                    // Bundle bundle = new Bundle();
-                                    // bundle.putString("jsonArray", jsonArray.toString());
-                                    // intent.putExtras(bundle);
-                                    // startActivity(intent);
-                                    try {
-                                        // jsonArray1 = new JSONArray(jsonArray.toString());
-                                        for (int i = 0; i < jsonArray.length(); i++) {
-                                            jsonObject1 = new JSONObject();
-                                            jsonObject1 = jsonArray.getJSONObject(i);
-                                            name = jsonObject1.getString("name");
-                                            System.out.println("name=" + name);
-                                            arrayList.add(name);
-                                        }
-                                        System.out.println("arrayList.size()====" + arrayList.size());
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-                                    }
-
-                                    int i = jsonArray.length();
-                                    System.out.println("i====" + i);
-                                    Toast.makeText(getApplicationContext(), "Update My UI", Toast.LENGTH_LONG).show();
-
-                                    for (int j = 0; j < arrayList.size(); j++) {
-                                        HashMap<String, Object> map = new HashMap<String, Object>();
-                                        map.put("title", arrayList.get(j));
-                                        // map.put("img", R.drawable.item_left2);
-                                        dlist.add(map);
-                                    }
-
-                                    // tx.setText(arrayList.toString());
-                                    // list = (ListView) findViewById(R.id.list);
-                                    // 通过Handler获得Message对象
-                                    // Message msg = new MyHandler().obtainMessage();
-                                    // msg.obj = arrayList;
-                                    // // 发送到Handler，在UI线程里处理Message
-                                    // msg.sendToTarget();
-                                    // Log.i(TAG, jsonArray.toString());
-                                } else {
-
-                                }
-
-                                // System.out.println("ooo==="+o.toString());
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-                    });
-                }
-
-                @Override
-                public void onFail(int i, Object o) {
-
-                }
-
-                @Override
-                public void onException(Throwable throwable) {
-
-                }
-            });
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return dlist;
-
-    }
-
-    /* 重写handleMessage方法，接受并处理Message消息 */
-    // public class MyHandler extends Handler {
-    // public void handleMessage(Message msg) {
-    // // 处理接受到的Message
-    // System.out.println("接受到消息：" + msg.obj + "，并成功处理");
-    // arrayList = (ArrayList)msg.obj;
-    // }
-    //
-    // private ArrayList<HashMap<String, Object>> getData() {
-    // ArrayList<HashMap<String, Object>> dlist = new ArrayList<HashMap<String, Object>>();
-    //
-    // for (int i = 0; i < arrayList.size(); i++) {
-    // HashMap<String, Object> map = new HashMap<String, Object>();
-    // map.put("title", arrayList.get(i));
-    // //map.put("img", R.drawable.item_left2);
-    // dlist.add(map);
-    // }
-    // return dlist;
-    // }
-    // }
 }

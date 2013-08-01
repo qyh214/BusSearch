@@ -41,5 +41,6 @@
     <drawable name="blue">#0000FF</drawable>
 
     <color name="black">#464646</color>
+    <color name="lightblue">#3498DB</color>
 
 </resources>

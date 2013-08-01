@@ -3,21 +3,21 @@
 
 	<item android:state_selected="true">
 		<shape>
-			<gradient android:angle="270" android:endColor="#4559F3"
-				android:startColor="#4559F3" />
+			<gradient android:angle="270" android:endColor="#3498DB"
+				android:startColor="#3498DB" />
 			<size android:height="60dp" android:width="320dp" />
 		</shape>
 	</item>
 	<item android:state_pressed="true">
 		<shape>
-			<gradient android:angle="270" android:endColor="#4559F3"
-				android:startColor="#40A0ff" />
+			<gradient android:angle="270" android:endColor="#3498DB"
+				android:startColor="#3498DB" />
 			<size android:height="60dp" android:width="320dp" />
 		</shape>
 	</item>
 	<item>
 		<shape>
-			<gradient android:angle="270" android:endColor="#E8EBEE"
+			<gradient android:angle="270" android:endColor="#FEFFFF"
 				android:startColor="#FEFFFF" />
 			<size android:height="60dp" android:width="320dp" />
 		</shape>

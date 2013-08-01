@@ -37,7 +37,9 @@ public class MainActivity extends TabActivity {
         Intent intent = new Intent(this, c);
         TabHost.TabSpec spec = tabHost.newTabSpec("tab" + labelId);
 
+
         View tabIndicator = LayoutInflater.from(this).inflate(R.layout.tab_indicator, getTabWidget(), false);
+        tabIndicator.setBackgroundColor(R.color.lightblue);
         TextView title = (TextView) tabIndicator.findViewById(R.id.title);
         title.setText(labelId);
         ImageView icon = (ImageView) tabIndicator.findViewById(R.id.icon);

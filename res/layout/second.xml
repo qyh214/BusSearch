@@ -27,11 +27,14 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="线路名"
+                android:text="线路"
                 android:id="@+id/textView"
-                android:layout_gravity="left|center_vertical"
+                android:textColor="#ffffff"
+                android:layout_marginTop="4dp"
                 android:layout_weight="0.05"
-                android:textSize="24dip"/>
+                android:textSize="24dip"
+
+                android:layout_centerHorizontal="true"/>
 
         <!--<ImageButton android:id="@+id/c"-->
         <!--android:layout_width="48dp"-->
@@ -67,6 +70,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:id="@+id/editText"
+
             android:layout_gravity="center_vertical"/>
 
     <Button
