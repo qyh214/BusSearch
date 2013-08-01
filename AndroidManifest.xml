@@ -45,7 +45,12 @@
         <activity android:name=".activity.BusRouteDetailActivity"
                   android:screenOrientation="portrait"
                   android:windowSoftInputMode="adjustUnspecified|adjustResize"/>
-        <activity android:name=".activity.TransmitMainActivity"/>
+        <activity android:name=".activity.TransmitMainActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustUnspecified|adjustResize"/>
+        <activity android:name=".activity.BusSiteArrayActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustUnspecified|adjustResize"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

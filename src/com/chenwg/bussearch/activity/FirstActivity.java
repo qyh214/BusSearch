@@ -1,6 +1,9 @@
 package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,106 +38,38 @@ public class FirstActivity extends Activity {
 
 
         button.setOnClickListener(new View.OnClickListener() {
-            String city="020";
 
-            //String stationName=station;
-
-            //String stationName="师大暨大";
-            Date date = new Date();
-            SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             @Override
             public void onClick(View view) {
-                String station = editText.getText().toString();
-                try{
-                    System.out.println("stationName==="+station);
-                    Bundle params=new Bundle();
-                    params.putString("app_id", "405410020000031174");
-                    params.putString("access_token", "fa63d346ab78af2225cf7597de0973551375092994988");
-                    params.putString("city", city);
-                    params.putString("stationName", URLDecoder.decode(station,"utf-8"));
-                    params.putString("encode", "utf-8");
-                    params.putString("batch", "2");
-                    params.putString("number", "1");
-                    params.putString("timestamp", formater.format(date));
-                    System.out.println("params==="+params.toString());
-                    SearchService.getBusSiteNameInfo(SearchService.busSiteNameInfoUrl, params,new Callback() {
-                        @Override
-                        public void onSuccess(final Object o) {
-                            FirstActivity.this.runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Log.i(TAG,o.toString());
-                                    //System.out.println("ooo==="+o.toString());
-                                }
-                            });
-                        }
-
-                        @Override
-                        public void onFail(int i, Object o) {
-
-                        }
-
-                        @Override
-                        public void onException(Throwable throwable) {
-
-                        }
-                    });
-                }catch (Exception e){
-                    e.printStackTrace();
+                String stationName = editText.getText().toString();
+                if ("".equals(stationName)){
+                    showDialog("站点不能为空！");
+                }else{
+                    Intent intent = new Intent(FirstActivity.this,BusSiteArrayActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("stationName",stationName);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
                 }
             }
         });
     }
 
-    class CCOnClickListener implements View.OnClickListener{
-        String city="020";
-        String stationName="";
+    protected void showDialog(String text){
+        //创建对话框
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("温馨提示");
+        builder.setMessage(text);
+        builder.setPositiveButton("确定",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
 
-        //String stationName="师大暨大";
-        Date date = new Date();
-        SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        @Override
-        public void onClick(View v) {
-            try{
-                System.out.println("stationName==="+stationName);
-                Bundle params=new Bundle();
-                params.putString("app_id", "405410020000031174");
-                params.putString("access_token", "fa63d346ab78af2225cf7597de0973551375092994988");
-                params.putString("city", city);
-                params.putString("stationName", URLDecoder.decode(stationName,"utf-8"));
-                params.putString("encode", "utf-8");
-                params.putString("batch", "2");
-                params.putString("number", "1");
-                params.putString("timestamp", formater.format(date));
-                System.out.println("params==="+params.toString());
-                SearchService.getBusSiteNameInfo("http://api.189.cn/v2/besttone/getBusSiteNameInfo", params,new Callback() {
-                    @Override
-                    public void onSuccess(final Object o) {
-                        FirstActivity.this.runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Log.i(TAG,o.toString());
-                                //System.out.println("ooo==="+o.toString());
-                            }
-                        });
-                    }
-
-                    @Override
-                    public void onFail(int i, Object o) {
-
-                    }
-
-                    @Override
-                    public void onException(Throwable throwable) {
-
-                    }
-                });
-            }catch (Exception e){
-                e.printStackTrace();
             }
+        });
 
-        }
+        builder.create().show();
     }
+
 }
 
 

@@ -7,6 +7,7 @@ package com.chenwg.bussearch.adapter;
 
 import java.util.ArrayList;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +34,7 @@ public class ListViewAdapter extends BaseAdapter implements ListAdapter {
     private Context context;
     private LayoutInflater inflater;
 
-    public ListViewAdapter(int item, BusRouteArrayActivity mainActivity, ArrayList data) {
+    public ListViewAdapter(int item, Activity mainActivity, ArrayList data) {
         this.data = data;
         this.context = mainActivity;
         this.id = item;

@@ -48,7 +48,7 @@
     <file path="/AndroidManifest.xml" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375338984667" ignored="false" />
     <file path="/splash.xml" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375084392806" ignored="false" />
     <file path="/MainActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375341630286" ignored="false" />
-    <file path="/FirstActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375163093254" ignored="false" />
+    <file path="/FirstActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375347843250" ignored="false" />
     <file path="/SecondActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375340056747" ignored="false" />
     <file path="/ThirdActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375340983965" ignored="false" />
     <file path="/FouthActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375087192743" ignored="false" />
@@ -103,6 +103,10 @@
     <file path="/CheckVersionService.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375344749187" ignored="false" />
     <file path="E:/xiahang/mfeb/03.开发区/05.系统代码/MF_Android/trunk/v1.8.0/src/com/travelsky/angel/mskymf/service/CheckVersionService.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375345490261" ignored="false" />
     <file path="E:/xiahang/mfeb/03.开发区/05.系统代码/MF_Android/trunk/v1.9.0/res/raw/config.ini" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375345548532" ignored="false" />
+    <file path="/BusSiteArrayActivity.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375350049654" ignored="false" />
+    <file path="/Dialog.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375347777333" ignored="false" />
+    <file path="/ListViewAdapter.java" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375348409122" ignored="false" />
+    <file path="/bussitearray.xml" changelist="5303cc11-f0fb-4784-a0aa-d0128b073489" time="1375348672432" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,29 +170,61 @@
       <file leaf-file-name="BusRouteArrayActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusRouteArrayActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="9" selection-start="2061" selection-end="6261" vertical-scroll-proportion="0.0">
+            <state line="205" column="5" selection-start="7834" selection-end="8076" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransmitMainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/TransmitMainActivity.java">
+      <file leaf-file-name="ListViewAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/adapter/ListViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="15" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.17391305">
+            <state line="74" column="16" selection-start="1898" selection-end="1906" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/SecondActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusSiteArrayActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusSiteArrayActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="22" selection-start="6429" selection-end="6429" vertical-scroll-proportion="0.545977">
               <folding>
-                <element signature="e#2259#4577#0" expanded="true" />
-                <element signature="e#4554#4555#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThirdActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/ThirdActivity.java">
+      <file leaf-file-name="bussitearray.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/bussitearray.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="54" selection-start="1632" selection-end="1639" vertical-scroll-proportion="0.0">
+            <state line="69" column="48" selection-start="2551" selection-end="2551" vertical-scroll-proportion="-9.777778">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/FirstActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="41" selection-start="1313" selection-end="1324" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1118#1734#0" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,14 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/first.xml" />
-        <option value="$PROJECT_DIR$/res/layout/busroutearray.xml" />
-        <option value="$PROJECT_DIR$/res/layout/third.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/SecondActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/transmitmain.xml" />
-        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/ThirdActivity.java" />
-        <option value="$PROJECT_DIR$/res/drawable/tab_unselected.xml" />
         <option value="$PROJECT_DIR$/res/drawable/tab_selected.xml" />
         <option value="$PROJECT_DIR$/res/drawable/tab_focus.xml" />
         <option value="$PROJECT_DIR$/res/drawable/tab_press.xml" />
@@ -222,14 +250,22 @@
         <option value="$PROJECT_DIR$/res/drawable/tab_indicator.xml" />
         <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusRouteArrayActivity.java" />
         <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/TransmitMainActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/SecondActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/utils/Dialog.java" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/FirstActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/model/BusSite.java" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/adapter/ListViewAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/bussitearray.xml" />
+        <option value="$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusSiteArrayActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="521" />
-    <option name="y" value="102" />
-    <option name="width" value="1271" />
-    <option name="height" value="693" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -336,6 +372,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bussearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,15 +716,15 @@
       <workItem from="1375257461256" duration="5252000" />
       <workItem from="1375279996568" duration="8000" />
       <workItem from="1375280015288" duration="4901000" />
-      <workItem from="1375321234562" duration="11984000" />
+      <workItem from="1375321234562" duration="15403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74451000" />
+    <option name="totallyTimeSpent" value="77870000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="102" width="1271" height="693" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3133848" sideWeight="0.8396095" order="2" side_tool="false" content_ui="tabs" />
@@ -703,8 +743,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22779922" sideWeight="0.8396095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16039051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21106821" sideWeight="0.8396095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16039051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -733,7 +773,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22779922" sideWeight="0.8396095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21106821" sideWeight="0.8396095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.7140865" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16039051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -800,81 +840,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/SecondActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="42" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.77003485">
-          <folding>
-            <element signature="e#1109#1713#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/back.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/third.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="45" selection-start="2869" selection-end="2869" vertical-scroll-proportion="-3.2962964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="151" selection-end="151" vertical-scroll-proportion="0.2682927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/tab_focus.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="62" selection-start="960" selection-end="960" vertical-scroll-proportion="0.6167247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/tab_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="48" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-13.037037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="78" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/data/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="552" column="20" selection-start="30362" selection-end="30362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/tab_indicator.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -899,26 +864,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusRouteArrayActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="9" selection-start="2061" selection-end="6261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/ThirdActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="54" selection-start="1632" selection-end="1639" vertical-scroll-proportion="0.0">
+        <state line="47" column="54" selection-start="1632" selection-end="1639" vertical-scroll-proportion="0.478955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/TransmitMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="15" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.17391305">
+        <state line="39" column="43" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.39332366">
           <folding>
-            <element signature="e#2259#4577#0" expanded="true" />
-            <element signature="e#4554#4555#0" expanded="true" />
+            <element signature="e#2261#4637#0" expanded="true" />
+            <element signature="e#4614#4615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="37" selection-start="791" selection-end="802" vertical-scroll-proportion="0.44702467">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="54" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.48911467">
+          <folding>
+            <element signature="e#414#432#0" expanded="true" />
+            <element signature="e#627#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/first.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.060423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/FirstActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="41" selection-start="1313" selection-end="1324" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1118#1734#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/model/BusRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="275" selection-end="425" vertical-scroll-proportion="0.67753625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/model/BusSite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="253" selection-end="253" vertical-scroll-proportion="0.557971">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/SecondActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/bussitearray.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="48" selection-start="2551" selection-end="2551" vertical-scroll-proportion="-9.777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusRouteArrayActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="5" selection-start="7834" selection-end="8076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/adapter/ListViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="16" selection-start="1898" selection-end="1906" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/chenwg/bussearch/activity/BusSiteArrayActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="22" selection-start="6429" selection-end="6429" vertical-scroll-proportion="0.545977">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
