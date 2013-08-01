@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +39,8 @@ public class BusRouteArrayActivity extends Activity {
     ListView list;
     private TextView tx;
     private TextView tx2;
+    ImageButton backButton;
+    ImageButton homeButton;
 
     private ListAdapter adapter;
 
@@ -79,6 +82,8 @@ public class BusRouteArrayActivity extends Activity {
         tx = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         tx2 = (TextView)findViewById(R.id.textView2);
+        homeButton = (ImageButton)findViewById(R.id.home);
+        backButton = (ImageButton)findViewById(R.id.back);
 
         Bundle bundle = this.getIntent().getExtras();
         String station = bundle.getString("station");
@@ -138,7 +143,7 @@ public class BusRouteArrayActivity extends Activity {
                                     BinderListData(arrayList);
                                     int i = jsonArray.length();
                                     System.out.println("i====" + i);
-                                    Toast.makeText(getApplicationContext(), "总共"+ i +"条路线", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), "总共"+ i +"条路线", Toast.LENGTH_SHORT).show();
                                     // tx.setText(arrayList.toString());
                                     // list = (ListView) findViewById(R.id.list);
                                     // 通过Handler获得Message对象
@@ -200,25 +205,23 @@ public class BusRouteArrayActivity extends Activity {
             }
         });
 
-        // SimpleAdapter adapter = new SimpleAdapter(this, getData(), R.layout.list_item, new String[] { "title" }, new int[] { R.id.title });
-        //
-        // list.setAdapter(adapter);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BusRouteArrayActivity.this.finish();
+            }
+        });
 
-        // list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        // @Override
-        // public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        // Intent intent = new Intent(BusRouteArrayActivity.this, BusRouteDetailActivity.class);
-        // try {
-        // Bundle bundle = new Bundle();
-        // bundle.putString("jsonObject", jsonArray1.getJSONObject(i).toString());
-        // intent.putExtras(bundle);
-        // startActivity(intent);
-        // } catch (JSONException e) {
-        // e.printStackTrace();
-        // }
-        //
-        // }
-        // });
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(BusRouteArrayActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 

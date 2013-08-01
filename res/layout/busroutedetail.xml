@@ -5,6 +5,47 @@
               android:background="#FCF9FA"
         >
 
+    <RelativeLayout android:id="@+id/Relativelayout01"
+                    android:background="#3498DB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp">
+
+        <!--<ImageButton android:id="@+id/a"-->
+        <!--android:layout_width="36dp"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:layout_toLeftOf="@id/Relativelayout01"-->
+        <!--android:src="@drawable/back"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--/>-->
+        <!--<ImageButton android:id="@+id/b"-->
+        <!--android:layout_width="125dp"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/logo"-->
+        <!--/>-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="线路"
+                android:id="@+id/textView"
+                android:textColor="#ffffff"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.05"
+                android:textSize="24dip"
+
+                android:layout_centerHorizontal="true"/>
+
+        <!--<ImageButton android:id="@+id/c"-->
+        <!--android:layout_width="48dp"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/login"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--/>-->
+
+
+    </RelativeLayout>
+
     <LinearLayout android:orientation="vertical"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content">
