@@ -1,6 +1,8 @@
 package com.chenwg.bussearch.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,80 +41,35 @@ public class SecondActivity extends Activity {
             @Override
             public void onClick(View view) {
                 String station = editText.getText().toString();
-                Intent intent = new Intent(SecondActivity.this,BusRouteArrayActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("station",station);
-                intent.putExtras(bundle);
-                startActivity(intent);
+                if ("".equals(station)){
+                    showDialog("线路不能为空！");
+                }else{
+                    Intent intent = new Intent(SecondActivity.this,BusRouteArrayActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("station",station);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                }
+
             }
 
-//            String city="020";
-//            Date date = new Date();
-//            SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//            @Override
-//            public void onClick(View view) {
-//                String station = editText.getText().toString();
-//                try{
-//                    System.out.println("stationName==="+station);
-//                    Bundle params=new Bundle();
-//                    params.putString("app_id", "405410020000031174");
-//                    params.putString("access_token", "fa63d346ab78af2225cf7597de0973551375092994988");
-//                    params.putString("city", city);
-//                    params.putString("busName", URLDecoder.decode(station, "utf-8"));
-//                    params.putString("encode", "utf-8");
-////                    params.putString("batch", "2");
-////                    params.putString("number", "5");
-//                    params.putString("timestamp", formater.format(date));
-//                    System.out.println("params==="+params.toString());
-//                    SearchService.getBusRouteInfo(SearchService.busRouteInfoUrl, params, new Callback() {
-//                        @Override
-//                        public void onSuccess(final Object o) {
-//                            SecondActivity.this.runOnUiThread(new Runnable() {
-//                                @Override
-//                                public void run() {
-//                                    //Log.i(TAG, o.toString());
-//                                    try{
-//                                        JSONObject jsonObject = new JSONObject(o.toString());
-//                                        String res_code = jsonObject.getString("res_code");
-//                                        if ("0".equals(res_code)){
-//                                            JSONArray jsonArray = jsonObject.getJSONObject("response").getJSONArray("list");
-//
-//                                            Intent intent = new Intent(SecondActivity.this,BusRouteArrayActivity.class);
-//                                            Bundle bundle = new Bundle();
-//                                            bundle.putString("jsonArray",jsonArray.toString());
-//                                            intent.putExtras(bundle);
-//                                            startActivity(intent);
-//
-//                                            int i=jsonArray.length();
-//                                            System.out.println("i===="+i);
-//                                            Log.i(TAG, jsonArray.toString());
-//                                        }else {
-//
-//                                        }
-//                                        //System.out.println("ooo==="+o.toString());
-//                                    }catch (JSONException e){
-//                                        e.printStackTrace();
-//                                    }
-//
-//                                }
-//                            });
-//                        }
-//
-//                        @Override
-//                        public void onFail(int i, Object o) {
-//
-//                        }
-//
-//                        @Override
-//                        public void onException(Throwable throwable) {
-//
-//                        }
-//                    });
-//                }catch (Exception e){
-//                    e.printStackTrace();
-//                }
-//            }
+
         });
+    }
+
+    protected void showDialog(String text){
+        //创建对话框
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("温馨提示");
+        builder.setMessage(text);
+        builder.setPositiveButton("确定",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+
+        builder.create().show();
     }
 
 

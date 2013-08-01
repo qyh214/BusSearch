@@ -3,6 +3,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/res/drawable-mdpi/back.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/res/drawable-mdpi/home.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable/tab_press.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable/tab_selected.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable/tab_unselected.xml" charset="GBK" />
   </component>
 </project>
 

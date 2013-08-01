@@ -63,21 +63,6 @@ public class BusRouteArrayActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.busroutearray);
 
-        // Bundle bundle = this.getIntent().getExtras();
-        // String jsonArray = bundle.getString("jsonArray");
-        // System.out.println("jsonArray============" + jsonArray);
-        // try {
-        // jsonArray1 = new JSONArray(jsonArray);
-        // for (int i = 0; i < jsonArray1.length(); i++) {
-        // jsonObject = new JSONObject();
-        // jsonObject = jsonArray1.getJSONObject(i);
-        // name = jsonObject.getString("name");
-        // System.out.println("name=" + name);
-        // arrayList.add(name);
-        // }
-        // } catch (JSONException e) {
-        // e.printStackTrace();
-        // }
 
         tx = (TextView)findViewById(R.id.textView);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
@@ -91,7 +76,7 @@ public class BusRouteArrayActivity extends Activity {
         String city = "020";
         SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
-        //
+
         try {
             Bundle params = new Bundle();
             params.putString("app_id", "405410020000031174");
@@ -144,14 +129,7 @@ public class BusRouteArrayActivity extends Activity {
                                     int i = jsonArray.length();
                                     System.out.println("i====" + i);
                                     Toast.makeText(getApplicationContext(), "总共"+ i +"条路线", Toast.LENGTH_SHORT).show();
-                                    // tx.setText(arrayList.toString());
-                                    // list = (ListView) findViewById(R.id.list);
-                                    // 通过Handler获得Message对象
-                                    // Message msg = new MyHandler().obtainMessage();
-                                    // msg.obj = arrayList;
-                                    // // 发送到Handler，在UI线程里处理Message
-                                    // msg.sendToTarget();
-                                    // Log.i(TAG, jsonArray.toString());
+
                                 } else {
 
                                 }

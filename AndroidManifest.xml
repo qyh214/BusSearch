@@ -5,19 +5,19 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="13"
         android:targetSdkVersion="16" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
         >
         <activity
             android:name="com.chenwg.bussearch.activity.SplashActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,6 +45,7 @@
         <activity android:name=".activity.BusRouteDetailActivity"
                   android:screenOrientation="portrait"
                   android:windowSoftInputMode="adjustUnspecified|adjustResize"/>
+        <activity android:name=".activity.TransmitMainActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

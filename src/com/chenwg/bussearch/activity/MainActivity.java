@@ -25,10 +25,10 @@ public class MainActivity extends TabActivity {
 
     private void setTabs()
     {
-        addTab("Home", R.drawable.tab_home, FirstActivity.class);
-        addTab("Search", R.drawable.tab_search, SecondActivity.class);
-        addTab("Search", R.drawable.tab_search, ThirdActivity.class);
-        addTab("Home", R.drawable.tab_home, FouthActivity.class);
+        addTab("站点", R.drawable.tab_home, FirstActivity.class);
+        addTab("线路", R.drawable.tab_search, SecondActivity.class);
+        addTab("换乘", R.drawable.tab_search, ThirdActivity.class);
+        addTab("关于", R.drawable.tab_home, FouthActivity.class);
 
 
     }
